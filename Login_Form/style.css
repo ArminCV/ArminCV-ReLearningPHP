@@ -1,0 +1,24 @@
+body{
+	background-color: skyblue;
+}
+#form{
+	background-color: white;
+	width: 20%;
+	margin: 120px auto;
+	padding: 50px;
+	box-shadow: 10px 10px 5px rgb(82, 11, 77);
+	bottom-radius: 6px;
+}
+#btn{
+	color: white;
+	background-color: skyblue;
+	padding: 10px;
+	font-size: large;
+	border-radius: 10px;
+}
+@media screen and (mad-width: 700px){
+	#form{
+		width: 65%;
+		padding: 40px;
+	}
+}
