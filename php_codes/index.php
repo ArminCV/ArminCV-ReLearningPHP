@@ -381,6 +381,153 @@
                 }
             }
 
+            echo "<h2>PHP Switch Statement</h2>";
+            $a = 34; $b = 56; $c = 45;
+            if($a < $b)
+            {
+                if ($a < $c)
+                {
+                    echo "$a is smaller than $b and $c";
+                }
+            }
+
+            echo "<h2>PHP Switch</h2>";
+            $num = 20;
+            switch($num)
+            {
+                case 10:
+                    echo("number is equals to 10");
+                    break;
+                case 20:
+                    echo("number is equal to 20");
+                    break;
+                case 30:
+                    echo("number is equal to 30");
+                    break;
+                default:
+                    echo("number is not equal to 10, 20, or 30");
+            }
+
+            echo "<h2>PHP Switch Statement with Character</h2>";
+            $ch = 'e';
+            switch(strtolower($ch))
+            {
+                case 'a':
+                    echo "Given character is vowel";
+                    break;
+                case 'e':
+                    echo "Given character is vowel";
+                    break;
+                case 'i':
+                    echo "Given character is vowel";
+                    break;
+                case 'o':
+                    echo "Given character is vowel";
+                    break;
+                case 'u':
+                    echo "Given character is vowel";
+                    break;
+                default:
+                    echo "Given character is a constant";
+            }
+
+            echo "<h2>PHP For Loop</h2>";
+            for($i=0; $i<10; $i++)
+            {
+                echo "$i<br>";
+            }
+
+            echo "<h2>PHP Nested Loop</h2>";
+            for($i=1; $i<=3; $i++)
+            {
+                for($j=1; $j<=3; $j++)
+                {
+                    echo "row $i  col $j<br>";
+                }
+            }
+
+            echo "<h2>PHP For Each Loop</h2>";
+            $seasson = array("summer", "winter", "spring", "autumn");
+            foreach($seasson as $arr)
+            {
+                echo "Season is: $arr<br>";
+            }
+
+            echo "<h2>PHP For Each Associative</h2>";
+            //declare array
+            $employee = array(
+                "Name" => "Alex",
+                "Email" => "alex.jtp@gmail.com",
+                "Age" => 21,
+                "Gender" => "Male"
+            );
+
+            //display associative array element through foreach loop
+            foreach($employee as $key => $element)
+            {
+                echo $key . ": " . $element;
+                echo "<br>";
+            }
+
+            echo "<h2>PHP While Loop</h2>";
+            $n = 1;
+            while($n <= 10)
+            {
+                echo "$n<br>";
+                $n++;
+            }
+            echo "<br>";
+
+            $i = 'A';
+            while($i < 'H')
+            {
+                echo $i;
+                $i++;
+                echo "<br>";
+            }
+
+            echo "<h2>PHP Do While</h2>";
+            $n = 1;
+            do{
+                echo "$n<br>";
+                $n++;
+            }while($n <= 10);
+
+            echo "<h2>PHP Break with Arrya of String</h2>";
+            //declare an array of string
+            $number = array("One", "Two", "Three", "Stop", "Four");
+            foreach($number as $element)
+            {
+                if($element == "Stop")
+                {
+                    break;
+                }
+                echo "$element<br>";
+            }
+
+            echo "<h2>PHP Continue</h2>";
+            echo "Even numbers between 1 to 20: <br>";
+            $i = 1;
+            while($i <= 20)
+            {
+                if($i % 2 == 1)
+                {
+                    $i++;
+                    continue;
+                }
+                echo "$i <br>";
+                $i++;
+            }
+
         ?>  
+
+        <br>
+        <button type="button" id="redirect">Next Page</button>
+        <script>
+            document.querySelector('#redirect')
+                .addEventListener('click', () => {
+                    window.location.href = 'PHP_FUNCTIONS.php';
+                });
+        </script>
     </body>  
 </html>  
