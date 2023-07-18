@@ -10,11 +10,15 @@
             $color = "black";  
             echo "My car is ". $color ."</br>";  
             echo "My dog is ". $color ."</br>";  
-            echo "My Phone is ". $color ."</br>";  
+            echo "My Phone is ". $color ."</br>"; 
+            
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP echo: printing variable value</h2>";
             $msg="Hello PHP World";
             echo "Message is $msg";
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP print: printing string</h2>";
             print "Hello by PHP print\n";
@@ -23,6 +27,8 @@
             $lname = "Valdez";
             echo "<br>";
             echo "My name is: ".$fname,$lname;
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP Variables</h2>";
             $str = "hello string";
@@ -36,6 +42,8 @@
             $y=6;
             $z=$x+$y;
             echo "Sum of $x and $y is $z";
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP Variable Scope</h2>";
             function local_var()
@@ -67,6 +75,8 @@
             global_variables();
             echo "<br>";echo "<br>";
 
+            echo "<hr style='display: block'>";
+
             echo "<h2>PHP Static Variables</h2>";
             function static_var()
             {
@@ -79,6 +89,8 @@
             }
             static_var();
             static_var();
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP $ and $$ Variables</h2>";
             $x = "abc";
@@ -103,9 +115,13 @@
             echo ${${$name}}. "<br>";  
             echo $Dog. "<br>";  
 
+            echo "<hr style='display: block'>";
+
             echo "<h2>PHP Constant: define()</h2>";
             define("MESSAGE", "Hello PHP");
             echo MESSAGE."<br>";
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP Constant: const keyword</h2>";
             const MESSAGE1="Hello const by PHP";  
@@ -115,6 +131,8 @@
             echo MSG, "</br>";  
             echo constant("MSG")."<br>";
             
+            echo "<hr style='display: block'>";
+
             echo "<h2>Magic Constants</h2>";
 
             echo "<h3>Example for __LINE__</h3>";    
@@ -234,11 +252,15 @@
             }
             echo javatpoint::class;
 
+            echo "<hr style='display: block'>";
+
             echo "<h3>PHP Boolean</h3>";
             if(TRUE)
                 echo "This condition is TRUE";
             if(FALSE)
                 echo "This condition is FALSE";
+
+            echo "<hr style='display: block'>";
 
             echo "<h3>PHP Integer</h3>";
             $dec1 = 34;  
@@ -248,18 +270,24 @@
             echo "Octal number: " .$oct1. "</br>";  
             echo "HexaDecimal number: " .$hexa1. "</br>";  
 
+            echo "<hr style='display: block'>";
+
             echo "<h3>PHP Float</h3>";
             $n1 = 19.34;  
             $n2 = 54.472;  
             $sum = $n1 + $n2;  
             echo "Addition of floating numbers: " .$sum; 
             
+            echo "<hr style='display: block'>";
+
             echo "<h3>PHP String</h3>";
             $company = "Javatpoint";  
             //both single and double quote statements will treat different  
             echo "Hello $company";  
             echo "</br>";  
             echo 'Hello $company';  
+
+            echo "<hr style='display: block'>";
 
             echo "<h3>PHP Array</h3>";
             $bikes = array("Royal Enfield", "Yamaha", "KTM");
@@ -268,6 +296,8 @@
             echo "Array Element1: $bikes[0]</br>";
             echo "Array Element2: $bikes[1]</br>";
             echo "Array Element3: $bikes[2]</br>";
+
+            echo "<hr style='display: block'>";
 
             echo "<h3>PHP Object</h3>";
             class bike
@@ -281,9 +311,13 @@
             $obj = new bike();
             $obj->model();
 
+            echo "<hr style='display: block'>";
+
             echo "<h3>PHP Null</h3>";
             $nl = NULL;
             echo $nl;
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP Operators</h2>";
             $a = 10;
@@ -297,6 +331,8 @@
             echo "a/b is ".$a / $b."<br>";
             echo "a%b is ".$a % $b."<br>";
             echo "a**b is ".$a ** $b."<br><br>";
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP Type Operators</h2>";
             //class declaration  
@@ -320,6 +356,7 @@
             var_dump($charu instanceof Developer);           //It will return true.  
             var_dump($charu instanceof Programmer);       //It will return 
 
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP If Statement</h2>";
             $num=12;  
@@ -327,6 +364,8 @@
             {  
                 echo "$num is less than 100";  
             }  
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP If Else Statement</h2>";
             if($num%2==0)
@@ -336,6 +375,8 @@
             {  
                 echo "$num is odd number";  
             }  
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP If-else-if Statement</h2>";
             $marks = 69;
@@ -367,6 +408,8 @@
                 echo "Invalid input";
             }
 
+            echo "<hr style='display: block'>";
+
             echo "<h2>PHP Nested If Statement</h3>";
             $age = 23;
             $nationality = "Japanese";
@@ -381,6 +424,8 @@
                 }
             }
 
+            echo "<hr style='display: block'>";
+
             echo "<h2>PHP Switch Statement</h2>";
             $a = 34; $b = 56; $c = 45;
             if($a < $b)
@@ -390,6 +435,8 @@
                     echo "$a is smaller than $b and $c";
                 }
             }
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP Switch</h2>";
             $num = 20;
@@ -407,6 +454,8 @@
                 default:
                     echo("number is not equal to 10, 20, or 30");
             }
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP Switch Statement with Character</h2>";
             $ch = 'e';
@@ -437,6 +486,8 @@
                 echo "$i<br>";
             }
 
+            echo "<hr style='display: block'>";
+
             echo "<h2>PHP Nested Loop</h2>";
             for($i=1; $i<=3; $i++)
             {
@@ -446,12 +497,16 @@
                 }
             }
 
+            echo "<hr style='display: block'>";
+
             echo "<h2>PHP For Each Loop</h2>";
             $seasson = array("summer", "winter", "spring", "autumn");
             foreach($seasson as $arr)
             {
                 echo "Season is: $arr<br>";
             }
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP For Each Associative</h2>";
             //declare array
@@ -468,6 +523,8 @@
                 echo $key . ": " . $element;
                 echo "<br>";
             }
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP While Loop</h2>";
             $n = 1;
@@ -486,12 +543,16 @@
                 echo "<br>";
             }
 
+            echo "<hr style='display: block'>";
+
             echo "<h2>PHP Do While</h2>";
             $n = 1;
             do{
                 echo "$n<br>";
                 $n++;
             }while($n <= 10);
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP Break with Arrya of String</h2>";
             //declare an array of string
@@ -504,6 +565,8 @@
                 }
                 echo "$element<br>";
             }
+
+            echo "<hr style='display: block'>";
 
             echo "<h2>PHP Continue</h2>";
             echo "Even numbers between 1 to 20: <br>";
@@ -518,6 +581,8 @@
                 echo "$i <br>";
                 $i++;
             }
+
+            echo "<hr style='display: block'>";
 
         ?>  
 
