@@ -1,5 +1,6 @@
 <!DOCTYPE>  
 <html>  
+    <title>PHP Fundamentals</title>
     <body>  
         <?php  
             echo "<h2>PHP Case Sensitivity</h2>";
@@ -554,7 +555,7 @@
 
             echo "<hr style='display: block'>";
 
-            echo "<h2>PHP Break with Arrya of String</h2>";
+            echo "<h2>PHP Break with Array of String</h2>";
             //declare an array of string
             $number = array("One", "Two", "Three", "Stop", "Four");
             foreach($number as $element)
@@ -592,6 +593,15 @@
             document.querySelector('#redirect')
                 .addEventListener('click', () => {
                     window.location.href = 'PHP_FUNCTIONS.php';
+                });
+        </script>
+
+<br><br>
+        <button type="button" id="redirect2">Fibonacci & Factorial Page</button>
+        <script>
+            document.querySelector('#redirect2')
+                .addEventListener('click', () => {
+                    window.location.href = 'fib&factorial.php';
                 });
         </script>
     </body>  
